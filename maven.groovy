@@ -1,5 +1,4 @@
 def call(){
-  stage(){
     //Escribir directamente el código del stage, sin agregarle otra clausula de Jenkins.
     stage("Paso 1: Compliar"){
         sh "echo 'Compile Code!'"
@@ -54,6 +53,5 @@ def call(){
                 sh 'curl -X GET "http://localhost:8081/rest/mscovid/test?msg=testing"'
             }
         }
-  }
 }
 return this;
